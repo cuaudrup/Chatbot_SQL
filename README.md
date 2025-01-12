@@ -1,4 +1,4 @@
-# Chatbot SQL DS Market
+# 🤖 Chatbot SQL DS Market
 I've developed a SQL-based chatbot that allows users to make queries to a personal database using natural language. The chatbot processes the input query and returns results in natural language as well. To accomplish this, I utilized advanced techniques like Retrieval-Augmented Generation (RAG) and Prompt Engineering to enhance the chatbot's ability to understand and respond accurately.
 
 Additionally, I incorporated Langchain, a powerful framework that facilitates the integration of language models with external data sources, making the query process more efficient and effective. Langchain helps manage the interaction between the natural language input, the model, and the database.
