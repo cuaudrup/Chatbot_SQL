@@ -1,0 +1,6 @@
+langchain-community
+streamlit
+python-dotenv
+langchain-openai
+typing-extensions
+sqlalchemy
