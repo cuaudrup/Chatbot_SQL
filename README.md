@@ -17,3 +17,23 @@ First, here is what our Streamlit interface looks like for making the queries.
 <div style="text-align: center;">
     <img src="https://github.com/cuaudrup/Chatbot_SQL/blob/main/images/Captura%20de%20pantalla%202025-01-12%20a%20las%2016.39.19.png" alt="Logo DS Market" />
 </div>
+
+Here is an example of a query, where we ask for the top 5 best-selling products in New York during week 18.
+
+<div style="text-align: center;">
+    <img src="https://github.com/cuaudrup/Chatbot_SQL/blob/main/images/Captura%20de%20pantalla%202025-01-12%20a%20las%2016.41.55.png" alt="Logo DS Market" />
+</div>
+
+In this example, we can see that it is able to sort categories by total sales.
+
+<div style="text-align: center;">
+    <img src="https://github.com/cuaudrup/Chatbot_SQL/blob/main/images/Captura%20de%20pantalla%202025-01-12%20a%20las%2016.48.16.png" alt="Logo DS Market" />
+</div>
+
+As the last example, we have the stock requirements for a specific product across different weeks.
+
+<div style="text-align: center;">
+    <img src="https://github.com/cuaudrup/Chatbot_SQL/blob/main/images/Captura%20de%20pantalla%202025-01-12%20a%20las%2016.55.16.png" alt="Logo DS Market" />
+</div>
+
+I encourage you to try implementing tools like this with your own databases, as they can be very useful. I hope you enjoyed it, see you soon.
