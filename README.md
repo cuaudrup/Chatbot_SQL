@@ -9,3 +9,7 @@ For the implementation, I used the following Python files:
 
 - **[backend.py](https://github.com/cuaudrup/Chatbot_SQL/blob/main/backend.py)**: This file contains the core logic for defining the chatbot's prompt. Using an OpenAI GPT-4 Mini LLM, I created the infrastructure for the chatbot to execute queries on the database and retrieve data. The .env file is used to securely load my OpenAI and Langchain API keys, which are essential for the model's operation.
 - **[frontend.py](https://github.com/tu_usuario/cuaudrup/Chatbot_SQL/main/frontend.py)**: This file handles the user interface, where I used Streamlit to create a simple and intuitive chat interface. Users can input their queries in natural language, and the chatbot will return responses directly within the interface, making it easy to interact with the system.
+
+My database contains sales predictions for weeks 17 to 20 from a company called DS Market, a supermarket chain with over 3000 items per store. These stores are located across multiple cities, and the products are categorized into various departments. The LLM was used to query these sales predictions. This is where the chatbot's utility becomes clear, as it provides a practical way for people without technical SQL knowledge to quickly and easily access data from the database. Below are some example queries related to the database, where we have data on sales predictions and stock needs.
+
+First, here is what our Streamlit interface looks like for making the queries.
