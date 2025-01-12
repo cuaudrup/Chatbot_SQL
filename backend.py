@@ -19,7 +19,7 @@ if not langchain_api_key:
     raise ValueError("LANGCHAIN_API_KEY is not configured. Check your .env file.")
 
 # Load the database
-db = SQLDatabase.from_uri("sqlite://///Users/cristian4ag/Documents/Project_Langchain/Data/DSMarket.db")
+db = SQLDatabase.from_uri("sqlite://///DSMarket.db")
 
 # Create the LLM model
 llm = ChatOpenAI(model="gpt-4o-mini")
