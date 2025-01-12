@@ -1,3 +1,4 @@
+# Run with: streamlit run frontend.py in the terminal.
 import streamlit as st
 import backend
 
