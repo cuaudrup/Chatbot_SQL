@@ -13,3 +13,7 @@ For the implementation, I used the following Python files:
 My database contains sales predictions for weeks 17 to 20 from a company called DS Market, a supermarket chain with over 3000 items per store. These stores are located across multiple cities, and the products are categorized into various departments. The LLM was used to query these sales predictions. This is where the chatbot's utility becomes clear, as it provides a practical way for people without technical SQL knowledge to quickly and easily access data from the database. Below are some example queries related to the database, where we have data on sales predictions and stock needs.
 
 First, here is what our Streamlit interface looks like for making the queries.
+
+<div style="text-align: center;">
+    <img src="https://github.com/cuaudrup/Chatbot_SQL/blob/main/images/Captura%20de%20pantalla%202025-01-12%20a%20las%2016.39.19.png" alt="Logo DS Market" />
+</div>
