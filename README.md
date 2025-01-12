@@ -27,6 +27,7 @@ My database contains sales predictions for weeks 17 to 20 from a company called 
     <img src="https://github.com/cuaudrup/Chatbot_SQL/blob/main/images/Captura%20de%20pantalla%202025-01-12%20a%20las%2016.41.55.png" alt="Logo DS Market" />
 </div>
 
+<br><br>
 
 
 - In this example, we can see that it is able to sort categories by total sales.
@@ -35,6 +36,7 @@ My database contains sales predictions for weeks 17 to 20 from a company called 
     <img src="https://github.com/cuaudrup/Chatbot_SQL/blob/main/images/Captura%20de%20pantalla%202025-01-12%20a%20las%2016.48.16.png" alt="Logo DS Market" />
 </div>
 
+<br><br>
 
 
 - As the last example, we have the stock requirements for a specific product across different weeks.
@@ -42,5 +44,8 @@ My database contains sales predictions for weeks 17 to 20 from a company called 
 <div style="text-align: center;">
     <img src="https://github.com/cuaudrup/Chatbot_SQL/blob/main/images/Captura%20de%20pantalla%202025-01-12%20a%20las%2016.55.16.png" alt="Logo DS Market" />
 </div>
+
+<br><br>
+
 
 I encourage you to try implementing tools like this with your own databases, as they can be very useful. I hope you enjoyed it, see you soon.
