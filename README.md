@@ -12,25 +12,31 @@ For the implementation, I used the following Python files:
 
 My database contains sales predictions for weeks 17 to 20 from a company called DS Market, a supermarket chain with over 3000 items per store. These stores are located across multiple cities, and the products are categorized into various departments. The LLM was used to query these sales predictions. This is where the chatbot's utility becomes clear, as it provides a practical way for people without technical SQL knowledge to quickly and easily access data from the database. Below are some example queries related to the database, where we have data on sales predictions and stock needs.
 
-First, here is what our Streamlit interface looks like for making the queries.
+- First, here is what our Streamlit interface looks like for making the queries.
 
 <div style="text-align: center;">
     <img src="https://github.com/cuaudrup/Chatbot_SQL/blob/main/images/Captura%20de%20pantalla%202025-01-12%20a%20las%2016.39.19.png" alt="Logo DS Market" />
 </div>
 
-Here is an example of a query, where we ask for the top 5 best-selling products in New York during week 18.
+
+
+- Here is an example of a query, where we ask for the top 5 best-selling products in New York during week 18.
 
 <div style="text-align: center;">
     <img src="https://github.com/cuaudrup/Chatbot_SQL/blob/main/images/Captura%20de%20pantalla%202025-01-12%20a%20las%2016.41.55.png" alt="Logo DS Market" />
 </div>
 
-In this example, we can see that it is able to sort categories by total sales.
+
+
+- In this example, we can see that it is able to sort categories by total sales.
 
 <div style="text-align: center;">
     <img src="https://github.com/cuaudrup/Chatbot_SQL/blob/main/images/Captura%20de%20pantalla%202025-01-12%20a%20las%2016.48.16.png" alt="Logo DS Market" />
 </div>
 
-As the last example, we have the stock requirements for a specific product across different weeks.
+
+
+- As the last example, we have the stock requirements for a specific product across different weeks.
 
 <div style="text-align: center;">
     <img src="https://github.com/cuaudrup/Chatbot_SQL/blob/main/images/Captura%20de%20pantalla%202025-01-12%20a%20las%2016.55.16.png" alt="Logo DS Market" />
