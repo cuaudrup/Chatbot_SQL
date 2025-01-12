@@ -18,6 +18,7 @@ My database contains sales predictions for weeks 17 to 20 from a company called 
     <img src="https://github.com/cuaudrup/Chatbot_SQL/blob/main/images/Captura%20de%20pantalla%202025-01-12%20a%20las%2016.39.19.png" alt="Logo DS Market" />
 </div>
 
+<br><br>
 
 
 - Here is an example of a query, where we ask for the top 5 best-selling products in New York during week 18.
