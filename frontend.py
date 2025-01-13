@@ -71,7 +71,7 @@ st.markdown(
 )
 
 # Set the title
-st.title("🤖 SQL Chatbot: DS Market")
+st.title("🤖 SQL Chatbot DS Market")
 
 # Initialize chat history
 if "chat_history" not in st.session_state:
