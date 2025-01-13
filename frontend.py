@@ -73,51 +73,51 @@ st.markdown(
 # Set the title
 st.title("🤖 SQL Chatbot DS Market")
 
-# Initialize chat history
-if "chat_history" not in st.session_state:
-    st.session_state.chat_history = []
+# Initialize the state for the current question and answer
+if "current_question" not in st.session_state:
+    st.session_state.current_question = ""
+if "current_answer" not in st.session_state:
+    st.session_state.current_answer = ""
 
-# User input with white-colored label
+# User input with a white-colored label
 user_question = st.text_input("💬 Ask a question about predicted sales:")
 
 # Process the user input
 if st.button("Submit") and user_question.strip():
     try:
+        # Store the current question
+        st.session_state.current_question = user_question
+
         # Generate SQL query
         query = backend.write_query(user_question)  # Replace with your implementation
-        
+
         # Execute the query
         result = backend.execute_query(query)  # Replace with your implementation
-        
-        # Generate the assistant's response in natural language
-        answer = backend.generate_answer(user_question, query, result)  # Replace with your implementation
-        
-        # Add user and assistant messages to the chat history
-        st.session_state.chat_history.append(("user", user_question))
-        st.session_state.chat_history.append(("assistant", answer))  # Only display the answer
-    
-    except Exception as e:
-        st.session_state.chat_history.append(("assistant", f"⚠️ **Error:** {str(e)}"))
 
-# Display the chat history
-for role, message in st.session_state.chat_history:
-    if role == "user":
-        st.markdown(
-            f"""
-            <div class="user-message">
-                <b>🧑‍💻 User:</b> {message}
-            </div>
-            """, unsafe_allow_html=True
-        )
-    elif role == "assistant":
-        st.markdown(
-            f"""
-            <div class="assistant-message">
-                <b>🤖 Assistant:</b> {message}
-            </div>
-            """, unsafe_allow_html=True
-        )
+        # Generate the assistant's response in natural language
+        st.session_state.current_answer = backend.generate_answer(user_question, query, result)
+
+    except Exception as e:
+        st.session_state.current_answer = f"⚠️ **Error:** {str(e)}"
+
+# Display the current question and answer
+if st.session_state.current_question:
+    st.markdown(
+        f"""
+        <div class="user-message">
+            <b>🧑‍💻 User:</b> {st.session_state.current_question}
+        </div>
+        """, unsafe_allow_html=True
+    )
+if st.session_state.current_answer:
+    st.markdown(
+        f"""
+        <div class="assistant-message">
+            <b>🤖 Assistant:</b> {st.session_state.current_answer}
+        </div>
+        """, unsafe_allow_html=True
+    )
 
 # Initial instruction for new users
-if not st.session_state.chat_history:
+if not st.session_state.current_question:
     st.info("Hello! Ask me a question about predicted sales, and I'll assist you. 😊")
